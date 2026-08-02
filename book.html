@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Book your rafting adventure with Nile River Explorers.">
+    <meta name="author" content="Mary Akintade">
+    <title>Book Now | Nile River Explorers</title>
+
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body>
+
+    <header>
+
+        <img src="images/z-excitingexpedition.jpg" alt="Nile River Explorers Logo">
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="book.html">Book Now</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <!-- HERO -->
+
+        <section class="booking-hero">
+
+            <img src="images/rafting16_1024.jpg" alt="Book Your Adventure">
+
+            <div class="booking-overlay">
+
+                <h1>Adventure is just one booking away!</h1>
+
+                <p>
+                    Reserve your unforgettable Nile River rafting experience today.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- BOOKING FORM -->
+
+        <section class="booking-section">
+
+            <h2>Book Your Adventure</h2>
+
+            <form>
+
+                <fieldset>
+
+                    <legend>Personal Information</legend>
+
+                    <label for="fullname">Full Name</label>
+                    <input type="text" id="fullname" name="fullname" required>
+
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required>
+
+                </fieldset>
+
+
+                <fieldset>
+
+                    <legend>Trip Details</legend>
+
+                    <label for="trip">Choose Your Adventure</label>
+
+                    <select id="trip" name="trip">
+
+                        <option value="">Select a Trip</option>
+
+                        <option>Los Dientes del Diablo</option>
+
+                        <option>Big Mallard</option>
+
+                        <option>Half Day Adventure</option>
+
+                        <option>Rapid Rush</option>
+
+                        <option>River Thunder</option>
+
+                    </select>
+
+
+                    <label for="date">Preferred Date</label>
+
+                    <input type="date" id="date" name="date">
+
+
+                    <label for="people">Number of Guests</label>
+
+                    <input type="number"
+                           id="people"
+                           name="people"
+                           min="1"
+                           max="20"
+                           value="2">
+
+                </fieldset>
+
+
+                <fieldset>
+
+                    <legend>Experience Level</legend>
+
+                    <label>
+                        <input type="radio" name="experience" value="beginner" checked>
+                        Beginner River Ride
+                    </label>
+
+                    <label>
+                        <input type="radio" name="experience" value="intermediate">
+                        Adventure Rapids
+                    </label>
+
+                    <label>
+                        <input type="radio" name="experience" value="expert">
+                        Extreme Nile Challenge                    </label>
+
+                </fieldset>
+
+
+                <fieldset>
+
+                    <legend>Special Requests</legend>
+
+                    <textarea
+                        rows="6"
+                        placeholder="Tell us anything we should know before your trip..."></textarea>
+
+                </fieldset>
+
+
+                <fieldset>
+
+                    <legend>Booking Confirmation</legend>
+
+                    <label class="checkbox">
+                        <input type="checkbox" required>
+                        I have read and understand the rafting safety guidelines.
+                    </label>
+
+                    <label class="checkbox">
+                        <input type="checkbox">
+                        I confirm that I have selected a trip that matches my experience level.
+                    </label>
+
+                    <label class="checkbox">
+                        <input type="checkbox">
+                        I understand that trip schedules may change due to weather or river conditions.
+                    </label>
+
+                </fieldset>
+
+
+                <button type="submit" class="book-btn">
+                    Book Your Adventure
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>© 2026 Nile River Explorers | Mary Akintade</p>
+
+        <nav class="socialmedia">
+
+            <a href="https://facebook.com">
+                <img src="images/facebook.png" alt="Facebook">
+            </a>
+
+            <a href="https://instagram.com">
+                <img src="images/instagram.jpg" alt="Instagram">
+            </a>
+
+            <a href="https://linkedin.com">
+                <img src="images/linkedin logo.png" alt="LinkedIn">
+            </a>
+
+        </nav>
+
+    </footer>
+
+</body>
+
+</html>
