@@ -1,0 +1,466 @@
+/* ==========================
+   ROOT VARIABLES
+========================== */
+
+:root {
+    --primary-color: #1d3557;
+    --secondary-color: #457b9d;
+    --accent-color: #f1faee;
+
+    --heading-font: Arial, sans-serif;
+    --body-font: Verdana, sans-serif;
+}
+
+/* ==========================
+   GLOBAL STYLES
+========================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    color: #222;
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* ==========================
+   HEADER
+========================== */
+
+header {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    align-items: center;
+    padding: 15px 30px;
+    background: white;
+}
+
+header img {
+    width: 120px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: var(--secondary-color);
+}
+
+/* ==========================
+   HERO (HOME PAGE)
+========================== */
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 40px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    background: rgba(0,0,0,.45);
+    padding: 20px;
+    font-size: 3rem;
+}
+
+/* ==========================
+   ABOUT HERO
+========================== */
+
+.about-hero {
+    position: relative;
+}
+
+.about-hero img {
+    width: 100%;
+}
+
+.about-hero h1 {
+    position: absolute;
+    top: 35px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    background: rgba(0,0,0,.45);
+    padding: 20px;
+}
+
+.about-hero article {
+    position: absolute;
+    left: 25px;
+    right: 25px;
+    bottom: 25px;
+    background: rgba(255,255,255,.85);
+    padding: 20px;
+}
+
+.about-hero article img {
+    width: 170px;
+    float: right;
+    margin-left: 20px;
+}
+
+/* ==========================
+   HISTORY
+========================== */
+
+.history {
+    padding: 60px 40px;
+    background: #fafafa;
+}
+
+.history h2 {
+    text-align: center;
+    margin-bottom: 35px;
+    font-size: 2.3rem;
+}
+
+.history-content {
+    display: grid;
+    grid-template-columns: 1fr 320px 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.history-content img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.history-content p {
+    line-height: 1.8;
+}
+
+/* ==========================
+   ADVENTURE GALLERY
+========================== */
+
+.adventure {
+    padding: 50px 30px;
+}
+
+.adventure h2 {
+    margin-bottom: 35px;
+}
+
+.adventure-gallery {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.adventure-gallery figure {
+    flex: 1;
+    text-align: center;
+}
+
+.adventure-gallery img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.adventure-gallery figcaption {
+    margin-top: 8px;
+    font-size: .9rem;
+}
+
+/* ==========================
+   CTA
+========================== */
+
+.cta {
+    text-align: center;
+    background: #eef6eb;
+    padding: 60px 20px;
+}
+.booking-confirmation {
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #f8f8f8;
+    border-radius: 8px;
+}
+
+.booking-confirmation h3 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.booking-confirmation .checkbox {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin: 12px 0;
+}
+
+.booking-confirmation .checkbox input {
+    margin-top: 4px;
+}
+
+.booking-confirmation button {
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 30px;
+    background: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* ==========================
+   HOME GRID
+========================== */
+
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+    padding: 40px 30px;
+}
+
+.grid-item img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.grid-item h3 {
+    margin: 15px 0;
+}
+
+/* ==========================
+   NEWSLETTER
+========================== */
+
+.newsletter {
+    background: var(--secondary-color);
+    color: white;
+    text-align: center;
+    padding: 45px 20px;
+}
+
+.newsletter h2 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.newsletter form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.newsletter input[type="text"],
+.newsletter input[type="email"] {
+    padding: 10px;
+    width: 200px;
+}
+
+.checkbox {
+    width: 100%;
+    margin: 15px 0;
+}
+
+.newsletter button {
+    padding: 10px 30px;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* ==========================
+   CONTACT PAGE
+========================== */
+
+.contact-info {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.company-details p {
+    margin: 8px 0;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding: 40px;
+}
+
+
+.map iframe {
+    width: 100%;
+    height: 320px;
+    border: 1px solid #ccc;
+}
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+}
+
+.contact-form button {
+    padding: 12px;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+}
+
+.employees {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.employees h2 {
+    margin-bottom: 30px;
+}
+
+.employee-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.employee-gallery {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: nowrap;
+}
+.employee-gallery img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 0 auto;
+}
+
+.employee-gallery figcaption {
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+/* ==========================
+   TRIPS
+========================== */
+
+.trips-hero {
+    text-align: center;
+    background: var(--accent-color);
+    padding: 50px;
+}
+
+.trip-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 25px;
+    padding: 40px;
+}
+
+.trip-card {
+    text-align: center;
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 3px 10px rgba(0,0,0,.15);
+}
+
+.trip-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.trip-table-section {
+    padding: 40px;
+}
+
+.trip-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.trip-table th,
+.trip-table td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: center;
+}
+
+.trip-table th {
+    background: var(--secondary-color);
+    color: white;
+}
+
+/* ==========================
+   FOOTER
+========================== */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--accent-color);
+    padding: 1rem;
+}
+
+.socialmedia {
+    display: flex;
+    gap: 10px;
+}
+
+.socialmedia img {
+    width: 40px;
+}
+
+
+
